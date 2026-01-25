@@ -5,8 +5,6 @@
 - **Nombre:** [Nombre descriptivo del MCP]
 - **Versión:** 1.0.0
 - **Tipo:** [Server/Client/Hybrid]
-- **Fecha de creación:** [YYYY-MM-DD]
-- **Última actualización:** [YYYY-MM-DD]
 
 ## 🎯 Propósito
 
@@ -168,11 +166,6 @@ export [VARIABLE_2]="[valor]"
 - [Documentación oficial](https://example.com)
 - [Repositorio](https://github.com/example/repo)
 - [Especificación MCP](https://modelcontextprotocol.io)
-
-## 🔄 Historial de Versiones
-
-### v1.0.0 - [YYYY-MM-DD]
-- Configuración inicial del MCP
 
 ## 📌 Notas Adicionales
 

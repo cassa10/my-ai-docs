@@ -1,133 +1,20 @@
-# [Nombre del Agente]
+# Sample AGENTS.md file
 
-## 📋 Información General
+## Dev environment tips
+- Use `pnpm dlx turbo run where <project_name>` to jump to a package instead of scanning with `ls`.
+- Run `pnpm install --filter <project_name>` to add the package to your workspace so Vite, ESLint, and TypeScript can see it.
+- Use `pnpm create vite@latest <project_name> -- --template react-ts` to spin up a new React + Vite package with TypeScript checks ready.
+- Check the name field inside each package's package.json to confirm the right name—skip the top-level one.
 
-- **Nombre:** [Nombre descriptivo del agente]
-- **Versión:** 1.0.0
-- **Fecha de creación:** [YYYY-MM-DD]
-- **Última actualización:** [YYYY-MM-DD]
-- **Autor:** [Tu nombre]
+## Testing instructions
+- Find the CI plan in the .github/workflows folder.
+- Run `pnpm turbo run test --filter <project_name>` to run every check defined for that package.
+- From the package root you can just call `pnpm test`. The commit should pass all tests before you merge.
+- To focus on one step, add the Vitest pattern: `pnpm vitest run -t "<test name>"`.
+- Fix any test or type errors until the whole suite is green.
+- After moving files or changing imports, run `pnpm lint --filter <project_name>` to be sure ESLint and TypeScript rules still pass.
+- Add or update tests for the code you change, even if nobody asked.
 
-## 🎯 Propósito
-
-[Descripción breve del propósito principal del agente y qué problemas resuelve]
-
-## 🔧 Capacidades
-
-Lista de capacidades principales del agente:
-
-- [ ] Capacidad 1
-- [ ] Capacidad 2
-- [ ] Capacidad 3
-
-## ⚙️ Configuración
-
-### Personalidad y Tono
-
-- **Estilo de comunicación:** [Formal/Casual/Técnico/etc.]
-- **Nivel de detalle:** [Alto/Medio/Bajo]
-- **Proactividad:** [Alta/Media/Baja]
-
-### Conocimientos Especializados
-
-- [Área de conocimiento 1]
-- [Área de conocimiento 2]
-- [Área de conocimiento 3]
-
-## 📝 Instrucciones de Comportamiento
-
-### Debe hacer:
-
-1. [Instrucción específica 1]
-2. [Instrucción específica 2]
-3. [Instrucción específica 3]
-
-### No debe hacer:
-
-1. [Restricción 1]
-2. [Restricción 2]
-3. [Restricción 3]
-
-## 💬 Prompt del Sistema
-
-```
-[Aquí va el prompt completo del sistema que define el comportamiento del agente]
-
-Sos un agente especializado en [área]. Tu objetivo es [objetivo principal].
-
-Características:
-- [Característica 1]
-- [Característica 2]
-- [Característica 3]
-
-Siempre debes:
-- [Comportamiento esperado 1]
-- [Comportamiento esperado 2]
-
-Nunca debes:
-- [Comportamiento a evitar 1]
-- [Comportamiento a evitar 2]
-```
-
-## 🔗 Integraciones
-
-### Herramientas Requeridas
-
-- [ ] [Herramienta 1]
-- [ ] [Herramienta 2]
-- [ ] [Herramienta 3]
-
-### MCPs Asociados
-
-- [MCP 1] - `mcps/[nombre-mcp].md`
-- [MCP 2] - `mcps/[nombre-mcp].md`
-
-### Reglas Asociadas
-
-- [Regla 1] - `rules/[nombre-regla].md`
-- [Regla 2] - `rules/[nombre-regla].md`
-
-## 📚 Ejemplos de Uso
-
-### Ejemplo 1: [Caso de uso específico]
-
-**Input:**
-```
-[Ejemplo de entrada del usuario]
-```
-
-**Output esperado:**
-```
-[Ejemplo de respuesta del agente]
-```
-
-### Ejemplo 2: [Otro caso de uso]
-
-**Input:**
-```
-[Ejemplo de entrada del usuario]
-```
-
-**Output esperado:**
-```
-[Ejemplo de respuesta del agente]
-```
-
-## ⚠️ Limitaciones
-
-- [Limitación 1]
-- [Limitación 2]
-- [Limitación 3]
-
-## 🔄 Historial de Versiones
-
-### v1.0.0 - [YYYY-MM-DD]
-- Versión inicial del agente
-
-## 📌 Notas Adicionales
-
-[Cualquier información adicional relevante sobre el agente]
-
----
-
-**Tags:** #agent #[categoría] #[tecnología]
+## PR instructions
+- Title format: [<project_name>] <Title>
+- Always run `pnpm lint` and `pnpm test` before committing.
