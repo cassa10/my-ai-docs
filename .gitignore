@@ -1,0 +1,67 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Archivos de configuración local
+.env
+.env.local
+*.local.md
+
+# Archivos privados o sensibles
+private/
+secrets/
+*.secret.md
+*.private.md
+
+# Node modules (si usás alguna herramienta Node)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python (si usás scripts Python)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.venv/
+
+# Archivos de sistema
+*.pid
+*.seed
+*.pid.lock
+
+# Directorios de build o output
+dist/
+build/
+out/
+*.out
+
+# Archivos de testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+
+# Notas personales que no querés commitear
+NOTES.md
+TODO.md
+SCRATCH.md
