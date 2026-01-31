@@ -91,7 +91,7 @@ Para generar el contenido, sigue estos pasos internamente:
 
 ## 🎯 Tarea Actual
 
-Desarrollar la sección principal. Genera las subsecciones que veas pertinentes, pero no debe 
+Desarrollar la sección principal. Genera las subsecciones que veas pertinentes.
 
 **Sección Principal:** Rendimiento y Resiliencia
 
