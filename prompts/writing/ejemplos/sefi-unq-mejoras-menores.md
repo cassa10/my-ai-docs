@@ -107,9 +107,3 @@ Desarrollar la sección principal. Genera las subsecciones que veas pertinentes.
     - Se arreglan mapeos de errores inesperados en los filtros de autenticación, por ejemplo: si había un error inesperado en la lógica de negocio, el error siempre salia por 401 en vez del status code correspondiente. Esto salio gracias a agregar y mejorar los tests de integración en los flujos normales y de autenticación.
 - Se actualiza configuración del filtro de autenticación del backend para no aplicarse con cualquier endpoint del método http OPTIONS. Esto se descubrió en pruebas locales. Esto afectaba en el error rate de New Relic, pero no tenia impacto negativo en el usuario. 
 
-
-
-
-
-
-
