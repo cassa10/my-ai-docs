@@ -18,6 +18,7 @@ Los plugins que traen varios skills se documentan en un solo archivo, con una ta
 | Superpowers | Sincronizado desde claude.ai | 6.4.2 | 15 | [superpowers.md](./superpowers.md) |
 | Engineering | Sincronizado desde claude.ai | 1.2.0 | 10 | [engineering.md](./engineering.md) |
 | Graphify | PyPI `graphifyy` (GitHub: Graphify-Labs/graphify) | 0.9.103 | 1 (`/graphify`) + CLI | [graphify.md](./graphify.md) |
+| i-have-adhd | GitHub: ayghri/i-have-adhd | 0.4.1 | 1 (`/i-have-adhd`) | [i-have-adhd.md](./i-have-adhd.md) |
 
 Skills integrados en la app (docx, pdf, pptx, xlsx, skill-creator y otros) no están en esta carpeta porque no los instalás vos.
 

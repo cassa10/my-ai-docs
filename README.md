@@ -57,6 +57,7 @@ Paquetes de instrucciones que los agentes cargan bajo demanda:
 - 🦸 **[Superpowers](skills/superpowers.md)**: flujo de trabajo y proceso.
 - 🛠️ **[Engineering](skills/engineering.md)**: revisión, depuración, arquitectura e incidentes.
 - 🕸️ **[Graphify](skills/graphify.md)**: convierte un proyecto en un grafo de conocimiento consultable.
+- 🧠 **[i-have-adhd](skills/i-have-adhd.md)**: formato de respuestas pensado para lectura con TDAH.
 
 → Índice: [`skills/README.md`](skills/README.md) · Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
 
