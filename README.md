@@ -5,11 +5,12 @@ Repositorio personal para organizar y gestionar prompts, agentes, reglas y confi
 ## 📁 Estructura del Repositorio
 
 ```
-personal-prompts/
+my-ai-docs/
 ├── prompts/          # Colección de prompts organizados por categoría
 ├── agents/           # Configuraciones de agentes AI
 ├── rules/            # Reglas personalizadas para agentes
 ├── mcps/             # Configuraciones de Model Context Protocol
+├── skills/           # Documentación de skills para agentes AI
 └── templates/        # Templates reutilizables
 ```
 
@@ -60,6 +61,17 @@ Configuraciones de Model Context Protocol para extender las capacidades de los a
 
 Ver `mcps/mcp-template.md` para configurar nuevos MCPs.
 
+- **[context7.md](mcps/context7.md)**: documentación de librerías actualizada.
+- **[engram.md](mcps/engram.md)**: memoria persistente entre sesiones.
+
+## 🧩 Skills
+
+Documentación de skills (paquetes de instrucciones que los agentes cargan bajo demanda) para Claude Code, Codex u otros agentes:
+
+- Cada skill tiene su propio archivo en `skills/` con instalación, ejemplos y limitaciones.
+
+Ver `skills/skill-template.md` para documentar nuevos skills.
+
 ## 🚀 Inicio Rápido
 
 ### Crear un nuevo prompt
@@ -86,6 +98,12 @@ cp rules/rules-template.md rules/mi-nueva-regla.md
 cp mcps/mcp-template.md mcps/mi-nuevo-mcp.md
 ```
 
+### Crear un nuevo skill
+
+```bash
+cp skills/skill-template.md skills/mi-nuevo-skill.md
+```
+
 ## 📚 Templates
 
 Los templates proporcionan una estructura base para crear nuevos elementos:
@@ -94,6 +112,7 @@ Los templates proporcionan una estructura base para crear nuevos elementos:
 - **`agent-template.md`** - Template para agentes
 - **`rules-template.md`** - Template para reglas
 - **`mcp-template.md`** - Template para MCPs
+- **`skill-template.md`** - Template para skills
 
 ## 🤝 Contribuir
 
@@ -105,4 +124,4 @@ Uso personal. Adaptá y modificá según tus necesidades.
 
 ---
 
-**Última actualización:** 2026-01-25
+**Última actualización:** 2026-11-07
