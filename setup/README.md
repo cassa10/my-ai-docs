@@ -20,7 +20,7 @@ Dentro de este repo:
 
 ## 🔧 Instalación
 
-El archivo global de Claude Code ya existe en esta máquina (`C:\Users\cassa\.claude\CLAUDE.md`). Para no perder reglas propias, agregar la plantilla al final en vez de reemplazar el archivo. Después revisar si hay reglas duplicadas.
+Si ya tenés un archivo global de Claude Code (`%USERPROFILE%\.claude\CLAUDE.md`), agregá la plantilla al final en vez de reemplazarlo, para no perder tus reglas. Después revisá si hay reglas duplicadas.
 
 Claude Code (Git Bash):
 

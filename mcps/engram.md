@@ -18,7 +18,7 @@ Engram guarda decisiones, descubrimientos y resúmenes de sesión en una base SQ
 
 Requisitos: ninguno en runtime (el binario incluye SQLite). Go 1.26+ solo si se compila desde fuente.
 
-**Estado en esta máquina (Windows 11):** ya instalado con `go install`, en `C:\Users\cassa\go\bin\engram.exe`, versión `v3.7.0`.
+**Referencia (Windows):** instalado con `go install`, el binario queda en `%USERPROFILE%\go\bin\engram.exe`. Versión de referencia: `v3.7.0`.
 
 Opciones de instalación en Windows (según [docs/INSTALLATION.md](https://github.com/Gentleman-Programming/engram/blob/main/docs/INSTALLATION.md#windows)):
 
@@ -72,6 +72,15 @@ engram setup opencode
 Lista completa de agentes soportados en [docs/AGENT-SETUP.md](https://github.com/Gentleman-Programming/engram/blob/main/docs/AGENT-SETUP.md).
 
 > **Claude Code:** `engram setup claude-code` instala/actualiza el plugin `engram@engram` a nivel usuario y puede pedir confirmación para las herramientas de escritura. La opción `--allow-memory-writes` las pre-aprueba sin preguntar: no usarla sin revisar antes qué implica.
+
+## 🧩 Plugin y hooks de Claude Code
+
+Además del servidor MCP, el plugin `engram@engram` (versión de referencia 0.1.22) trae:
+
+- **Skill `engram-memory`:** protocolo para guardar solo conocimiento verificado y durable. Está siempre activo.
+- **Hooks:** ejecutan comandos de `engram` al iniciar y cerrar sesión, al enviar un prompt, antes y después de cada herramienta, y al cerrar un subagente.
+
+Para ver el comando exacto de cada evento, revisar `hooks/hooks.json` dentro del plugin.
 
 ## 🔌 Recursos Disponibles
 
@@ -183,9 +192,9 @@ Si no aparece, agregar `%USERPROFILE%\go\bin` al PATH.
 **Solución:**
 ```powershell
 engram version
-curl --fail --silent --show-error http://127.0.0.1:7437/health
+curl --fail --silent --show-error http://9.9.9.9:1234/health
 ```
-Reiniciar el servidor desde su supervisor (`engram restart` solo controla el demonio con pidfile).
+Reemplazar `9.9.9.9:1234` por la dirección y el puerto reales del servidor (son valores de ejemplo). Reiniciar el servidor desde su supervisor (`engram restart` solo controla el demonio con pidfile).
 
 ### Problema 4: Dudas sobre el estado del store
 

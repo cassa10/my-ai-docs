@@ -41,16 +41,23 @@ Cada agente se define en un archivo markdown con su nombre, capacidades y limita
 
 Configuraciones para extender las capacidades de los agentes con herramientas externas, bases de datos, APIs y contexto propio.
 
-- 🧠 **[Engram](mcps/engram.md)**: memoria persistente entre sesiones.
-- 📚 **[Context7](mcps/context7.md)**: documentación de librerías actualizada.
+- 🧠 **[Engram](mcps/engram.md)** · 📚 **[Context7](mcps/context7.md)**: memoria entre sesiones y documentación de librerías.
+- ☁️ **[Google Workspace](mcps/google-workspace.md)** · 📓 **[Notion](mcps/notion.md)** · 📄 **[Claude Docs](mcps/claude-docs.md)** · 🎵 **[Spotify](mcps/spotify.md)**: conectores de claude.ai.
+- 🔑 Con autenticación en `/mcp`: **[Slack](mcps/slack.md)**, **[Linear](mcps/linear.md)**, **[Atlassian](mcps/atlassian.md)**, **[GitHub](mcps/github.md)**, **[Asana](mcps/asana.md)**, **[PagerDuty](mcps/pagerduty.md)** y **[Datadog](mcps/datadog.md)**.
+- 🎭 **[Playwright](mcps/playwright.md)**: control de navegador local.
 
-→ Plantilla: [`mcps/mcp-template.md`](mcps/mcp-template.md)
+→ Índice completo: [`mcps/README.md`](mcps/README.md) · Plantilla: [`mcps/mcp-template.md`](mcps/mcp-template.md)
 
 ## 🧩 Skills
 
-Paquetes de instrucciones que los agentes cargan bajo demanda. Cada skill documenta su instalación, ejemplos y limitaciones.
+Paquetes de instrucciones que los agentes cargan bajo demanda:
 
-→ Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
+- 🐾 **[Caveman](skills/caveman.md)**: respuestas comprimidas, con 22 skills.
+- 🧘 **[Ponytail](skills/ponytail.md)**: el mínimo cambio que resuelve la tarea.
+- 🦸 **[Superpowers](skills/superpowers.md)**: flujo de trabajo y proceso.
+- 🛠️ **[Engineering](skills/engineering.md)**: revisión, depuración, arquitectura e incidentes.
+
+→ Índice: [`skills/README.md`](skills/README.md) · Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
 
 ## ⚙️ Setup de Agentes
 
