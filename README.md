@@ -56,6 +56,7 @@ Paquetes de instrucciones que los agentes cargan bajo demanda:
 - 🧘 **[Ponytail](skills/ponytail.md)**: el mínimo cambio que resuelve la tarea.
 - 🦸 **[Superpowers](skills/superpowers.md)**: flujo de trabajo y proceso.
 - 🛠️ **[Engineering](skills/engineering.md)**: revisión, depuración, arquitectura e incidentes.
+- 🕸️ **[Graphify](skills/graphify.md)**: convierte un proyecto en un grafo de conocimiento consultable.
 
 → Índice: [`skills/README.md`](skills/README.md) · Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
 
