@@ -45,8 +45,6 @@ Reiniciar la sesión del agente después de instalar: Claude Code y Codex leen e
 ## 🔗 Relacionados
 
 - [AGENTS.md](../AGENTS.md): reglas de este repo (revisar los README de cada carpeta al hacer cambios).
-- [rules/](../rules/README.md): reglas específicas que puedas reutilizar en proyectos.
-
 ---
 
 **Tags:** #setup #claude-code #codex #seguridad
