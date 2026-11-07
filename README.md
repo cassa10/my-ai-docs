@@ -11,6 +11,7 @@ my-ai-docs/
 ├── rules/            # Reglas personalizadas para agentes
 ├── mcps/             # Configuraciones de Model Context Protocol
 ├── skills/           # Documentación de skills para agentes AI
+├── setup/            # Instrucciones base de comportamiento y seguridad para agentes
 └── templates/        # Templates reutilizables
 ```
 
@@ -71,6 +72,15 @@ Documentación de skills (paquetes de instrucciones que los agentes cargan bajo 
 - Cada skill tiene su propio archivo en `skills/` con instalación, ejemplos y limitaciones.
 
 Ver `skills/skill-template.md` para documentar nuevos skills.
+
+## ⚙️ Setup de Agentes
+
+Instrucciones base que cualquier agente debería cargar por defecto (comportamiento y seguridad):
+
+- **[setup/global-agent-instructions.md](setup/global-agent-instructions.md)**: plantilla común para `CLAUDE.md` (Claude Code) y `AGENTS.md` (Codex).
+- **[CLAUDE.md](CLAUDE.md)** importa **[AGENTS.md](AGENTS.md)**, así Claude Code usa las mismas reglas del repo.
+
+Ver [setup/README.md](setup/README.md) para instalar la plantilla en cada agente.
 
 ## 🚀 Inicio Rápido
 
