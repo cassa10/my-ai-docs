@@ -6,6 +6,8 @@
 
 Lo más agnóstico posible del modelo y de la tecnología.
 
+🎯 **Objetivo:** documentar y poder replicar la instalación de todo en Claude Code o Codex sin problemas a futuro.
+
 </div>
 
 ---
@@ -14,10 +16,10 @@ Lo más agnóstico posible del modelo y de la tecnología.
 
 | | Sección | Qué encontrás | Empezar por |
 |:---:|---|---|---|
-| 🤖 | [Agents](agents/) | Definiciones de agentes AI personalizados | [agent-template.md](agents/agent-template.md) |
+| 🤖 | [Agents](agents/) | Los 4 agentes personalizados de Claude Code | [explorer.md](agents/claude/explorer.md) |
 | 🔌 | [MCPs](mcps/) | Integraciones con herramientas externas | [engram.md](mcps/engram.md) · [context7.md](mcps/context7.md) |
 | 🧩 | [Skills](skills/) | Skills para Claude Code, Codex y otros agentes | [skill-template.md](skills/skill-template.md) |
-| ⚙️ | [Setup](setup/) | Instrucciones base de comportamiento y seguridad | [global-agent-instructions.md](setup/global-agent-instructions.md) |
+| ⚙️ | [Setup](setup/) | Replicación de Claude Code y Codex | [setup/README.md](setup/README.md) |
 | 🧱 | [Templates](templates/) | Plantillas reutilizables | [prompt-template.md](templates/prompt-template.md) |
 
 ## 📁 Estructura
@@ -27,15 +29,20 @@ my-ai-docs/
 ├── agents/      # 🤖 Configuraciones de agentes AI
 ├── mcps/        # 🔌 Configuraciones de Model Context Protocol
 ├── skills/      # 🧩 Documentación de skills
-├── setup/       # ⚙️ Instrucciones base de comportamiento y seguridad
+├── setup/       # ⚙️ Replicación de Claude Code y Codex
 └── templates/   # 🧱 Templates reutilizables
 ```
 
 ## 🤖 Agents
 
-Cada agente se define en un archivo markdown con su nombre, capacidades y limitaciones, instrucciones de comportamiento y ejemplos de uso.
+Agentes personalizados para Claude Code, listos para copiar a `~/.claude/agents/`:
 
-→ Plantilla: [`agents/agent-template.md`](agents/agent-template.md)
+- 🔎 **explorer**: localiza código y mapea directorios (solo lectura).
+- 🛠️ **implementer**: cambios acotados y tests.
+- 📚 **researcher**: docs y versiones LTS con soporte (solo lectura).
+- 🔍 **reviewer**: busca bugs, riesgos de seguridad y datos sensibles antes de un commit o PR (solo lectura).
+
+→ Índice: [`agents/README.md`](agents/README.md) · Plantilla: [`agents/claude/agent-template.md`](agents/claude/agent-template.md)
 
 ## 🔌 MCPs (Model Context Protocol)
 
@@ -65,7 +72,8 @@ Paquetes de instrucciones que los agentes cargan bajo demanda:
 
 Instrucciones base que cualquier agente debería cargar por defecto:
 
-- 📄 **[`setup/global-agent-instructions.md`](setup/global-agent-instructions.md)**: plantilla común para `CLAUDE.md` (Claude Code) y `AGENTS.md` (Codex).
+- 🧰 **[`setup/claude/`](setup/claude/)**: configuración de Claude Code (reglas globales, settings, status line y plugins).
+- 🧭 **[`setup/codex/`](setup/codex/README.md)**: cómo replicar la configuración en Codex, con la plantilla por defecto [`global-agent-instructions.md`](setup/global-agent-instructions.md).
 - 🔗 **[`CLAUDE.md`](CLAUDE.md)** importa **[`AGENTS.md`](AGENTS.md)**, así Claude Code usa las mismas reglas del repo.
 
 → Cómo instalarlo en cada agente: [`setup/README.md`](setup/README.md)
@@ -74,7 +82,7 @@ Instrucciones base que cualquier agente debería cargar por defecto:
 
 ```bash
 # 🤖 Nuevo agente
-cp agents/agent-template.md agents/mi-nuevo-agente.md
+cp agents/claude/agent-template.md agents/claude/mi-nuevo-agente.md
 
 # 🔌 Nueva configuración MCP
 cp mcps/mcp-template.md mcps/mi-nuevo-mcp.md
@@ -88,7 +96,7 @@ cp skills/skill-template.md skills/mi-nuevo-skill.md
 | Template | Para qué sirve |
 |---|---|
 | [`prompt-template.md`](templates/prompt-template.md) | 📝 Prompts |
-| [`agent-template.md`](agents/agent-template.md) | 🤖 Agentes |
+| [`agent-template.md`](agents/claude/agent-template.md) | 🤖 Agentes |
 | [`mcp-template.md`](mcps/mcp-template.md) | 🔌 MCPs |
 | [`skill-template.md`](skills/skill-template.md) | 🧩 Skills |
 

@@ -1,6 +1,6 @@
 # Instrucciones globales para agentes
 
-Base de comportamiento y seguridad que cualquier agente debería cargar por defecto. Es la misma plantilla para Claude Code (`CLAUDE.md`) y Codex (`AGENTS.md`). Cómo instalarla: ver [setup/README.md](README.md).
+Base de comportamiento y seguridad que cualquier agente debería cargar por defecto. Es la plantilla por defecto para Codex (`~/.codex/AGENTS.md`), que todavía no tiene archivo global. Claude Code usa su archivo real, [claude/CLAUDE.md](claude/CLAUDE.md). Cómo instalarla: ver [setup/README.md](README.md).
 
 Si un proyecto tiene instrucciones propias, aplicarlas siempre que no contradigan las reglas de seguridad de este archivo.
 
