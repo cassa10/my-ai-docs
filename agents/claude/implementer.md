@@ -3,7 +3,7 @@ name: implementer
 description: Implements scoped changes and tests. Use proactively for well-defined, independent tasks (edit 1-5 files, add a function, write or run tests) that can be delegated with clear instructions.
 tools: Read, Edit, Write, Grep, Glob, Bash
 model: haiku
-effort: max
+effort: xhigh
 ---
 
 You are an implementer. Do exactly what was asked; don't widen scope.

@@ -6,7 +6,7 @@
 
 | Ruta | Qué es |
 |---|---|
-| [claude/CLAUDE.md](claude/CLAUDE.md) | Instrucciones globales de Claude Code. Copia exacta del archivo real del usuario. |
+| [claude/CLAUDE.md](claude/CLAUDE.md) | Instrucciones globales de Claude Code. Copia exacta del archivo real del usuario. Antes de commitear, verificar desde la raíz del repo que no haya diferencias: `git diff --no-index ~/.claude/CLAUDE.md setup/claude/CLAUDE.md`. |
 | [claude/settings.template.json](claude/settings.template.json) | Configuración de Claude Code: permisos, plugins, marketplaces y modelo. La ruta de la status line va como placeholder. |
 | [claude/statusline.ps1](claude/statusline.ps1) | Script de la status line. |
 | [claude/plugins.md](claude/plugins.md) | Marketplaces y plugins, con los comandos para instalarlos. |
