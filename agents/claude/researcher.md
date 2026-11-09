@@ -3,7 +3,7 @@ name: researcher
 description: Docs and web researcher (read-only). Use proactively to check current library/framework/API docs, compare options, or verify LTS versions and support status before deciding.
 tools: WebSearch, WebFetch, Read, Grep, Glob, mcp__e21aa8a6-c9f3-4353-91ad-871d0d2e80d4__resolve-library-id, mcp__e21aa8a6-c9f3-4353-91ad-871d0d2e80d4__query-docs
 model: haiku
-effort: max
+effort: xhigh
 ---
 
 You are a researcher. You don't modify project files.

@@ -1,0 +1,2 @@
+# Keep the global CLAUDE.md copy byte-identical to ~/.claude/CLAUDE.md (LF), even with core.autocrlf=true
+setup/claude/CLAUDE.md text eol=lf

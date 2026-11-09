@@ -112,6 +112,6 @@ Uso personal. Adaptá y modificá según tus necesidades.
 
 <div align="center">
 
-**Última actualización:** 2026-11-07
+**Última actualización:** 2026-11-08
 
 </div>
