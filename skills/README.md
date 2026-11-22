@@ -19,6 +19,8 @@ Los plugins que traen varios skills se documentan en un solo archivo, con una ta
 | Engineering | Sincronizado desde claude.ai | 1.2.0 | 10 | [engineering.md](./engineering.md) |
 | Graphify | PyPI `graphifyy` (GitHub: Graphify-Labs/graphify) | 0.9.103 | 1 (`/graphify`) + CLI | [graphify.md](./graphify.md) |
 | i-have-adhd | GitHub: ayghri/i-have-adhd | 0.4.1 | 1 (`/i-have-adhd`) | [i-have-adhd.md](./i-have-adhd.md) |
+| Modern Web Guidance | GitHub: GoogleChrome/modern-web-guidance | 1.0.1 | 1 (`modern-web-guidance`) + CLI | [modern-web-guidance.md](./modern-web-guidance.md) |
+| Frontend Design | GitHub: anthropics/claude-plugins-official | 1.1.1 | 1 (`frontend-design`) | [frontend-design.md](./frontend-design.md) |
 
 Skills integrados en la app (docx, pdf, pptx, xlsx, skill-creator y otros) no están en esta carpeta porque no los instalás vos.
 

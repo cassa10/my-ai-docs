@@ -10,6 +10,8 @@ Versiones de referencia al 2026-11-07. Para reproducir la instalación, seguir l
 | caveman | JuliusBrussee/caveman |
 | engram | Gentleman-Programming/engram |
 | i-have-adhd | ayghri/i-have-adhd |
+| googlechrome | GoogleChrome/modern-web-guidance |
+| claude-plugins-official | anthropics/claude-plugins-official |
 
 ## 🧩 Plugins
 
@@ -19,6 +21,8 @@ Versiones de referencia al 2026-11-07. Para reproducir la instalación, seguir l
 | `caveman@caveman` | 4.0.1 | Comando de abajo | [caveman.md](../../skills/caveman.md) | Su CLI envía telemetría por defecto. Revisar antes de instalar el CLI. |
 | `engram@engram` | 0.1.22 | Comando de abajo, o `engram setup claude-code` | [engram.md](../../mcps/engram.md) | Requiere el binario `engram` en el PATH. |
 | `i-have-adhd@i-have-adhd` | 0.4.1 | Comando de abajo | [i-have-adhd.md](../../skills/i-have-adhd.md) | El modo siempre activo queda apagado hasta crear su archivo bandera. |
+| `modern-web-guidance@googlechrome` | 1.0.1 | Comando de abajo | [modern-web-guidance.md](../../skills/modern-web-guidance.md) | Telemetría anónima de Google; se apaga con `DISABLE_TELEMETRY=1`. Necesita Node.js. |
+| `frontend-design@claude-plugins-official` | 1.1.1 | Comando de abajo, o desde la UI de Claude | [frontend-design.md](../../skills/frontend-design.md) | Solo criterio de diseño visual. |
 | `superpowers@synced` | 6.4.2 | No hay comando: viene sincronizado desde claude.ai | [superpowers.md](../../skills/superpowers.md) | Se gestiona desde la cuenta de claude.ai. |
 | `engineering@synced` | 1.2.0 | No hay comando: viene sincronizado desde claude.ai | [engineering.md](../../skills/engineering.md) | Se gestiona desde la cuenta de claude.ai. |
 
@@ -36,6 +40,12 @@ claude plugin install engram@engram
 
 claude plugin marketplace add ayghri/i-have-adhd
 claude plugin install i-have-adhd@i-have-adhd
+
+claude plugin marketplace add GoogleChrome/modern-web-guidance --scope user
+claude plugin install modern-web-guidance@googlechrome --scope user
+
+claude plugin marketplace add anthropics/claude-plugins-official
+claude plugin install frontend-design@claude-plugins-official
 ```
 
 Verificar:

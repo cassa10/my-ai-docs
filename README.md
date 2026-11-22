@@ -65,6 +65,8 @@ Paquetes de instrucciones que los agentes cargan bajo demanda:
 - 🛠️ **[Engineering](skills/engineering.md)**: revisión, depuración, arquitectura e incidentes.
 - 🕸️ **[Graphify](skills/graphify.md)**: convierte un proyecto en un grafo de conocimiento consultable.
 - 🧠 **[i-have-adhd](skills/i-have-adhd.md)**: formato de respuestas pensado para lectura con TDAH.
+- 🌐 **[Modern Web Guidance](skills/modern-web-guidance.md)**: prácticas web actuales de Google Chrome para HTML, CSS y JS de cliente.
+- 🎨 **[Frontend Design](skills/frontend-design.md)**: diseño visual distintivo para interfaces.
 
 → Índice: [`skills/README.md`](skills/README.md) · Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
 
@@ -112,6 +114,6 @@ Uso personal. Adaptá y modificá según tus necesidades.
 
 <div align="center">
 
-**Última actualización:** 2026-11-08
+**Última actualización:** 2026-11-21
 
 </div>
