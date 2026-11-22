@@ -19,6 +19,7 @@ Lo más agnóstico posible del modelo y de la tecnología.
 | 🤖 | [Agents](agents/) | Los 4 agentes personalizados de Claude Code | [explorer.md](agents/claude/explorer.md) |
 | 🔌 | [MCPs](mcps/) | Integraciones con herramientas externas | [engram.md](mcps/engram.md) · [context7.md](mcps/context7.md) |
 | 🧩 | [Skills](skills/) | Skills para Claude Code, Codex y otros agentes | [skill-template.md](skills/skill-template.md) |
+| 🖥️ | [Apps](apps/) | Aplicaciones que orquestan agentes | [orca.md](apps/orca.md) |
 | ⚙️ | [Setup](setup/) | Replicación de Claude Code y Codex | [setup/README.md](setup/README.md) |
 | 🧱 | [Templates](templates/) | Plantillas reutilizables | [prompt-template.md](templates/prompt-template.md) |
 
@@ -27,6 +28,7 @@ Lo más agnóstico posible del modelo y de la tecnología.
 ```
 my-ai-docs/
 ├── agents/      # 🤖 Configuraciones de agentes AI
+├── apps/        # 🖥️ Aplicaciones que orquestan agentes
 ├── mcps/        # 🔌 Configuraciones de Model Context Protocol
 ├── skills/      # 🧩 Documentación de skills
 ├── setup/       # ⚙️ Replicación de Claude Code y Codex
@@ -67,8 +69,23 @@ Paquetes de instrucciones que los agentes cargan bajo demanda:
 - 🧠 **[i-have-adhd](skills/i-have-adhd.md)**: formato de respuestas pensado para lectura con TDAH.
 - 🌐 **[Modern Web Guidance](skills/modern-web-guidance.md)**: prácticas web actuales de Google Chrome para HTML, CSS y JS de cliente.
 - 🎨 **[Frontend Design](skills/frontend-design.md)**: diseño visual distintivo para interfaces.
+- 🔷 **[TypeScript LSP](skills/typescript-lsp.md)**: ir a definiciones y ver errores de tipos reales en TypeScript y JavaScript.
+- 🛡️ **[Security Guidance](skills/security-guidance.md)**: revisión de seguridad del código que escribe Claude, al editar y al cerrar cada turno.
+- 🔍 **[Code Review](skills/code-review.md)**: revisión automática de pull requests con agentes y confianza por hallazgo.
+- 📝 **[Commit Commands](skills/commit-commands.md)**: comandos para commit, commit con PR y limpieza de ramas.
+- ✂️ **[Code Simplifier](skills/code-simplifier.md)**: agente que simplifica código sin cambiar su funcionalidad.
+- 📒 **[CLAUDE.md Management](skills/claude-md-management.md)**: auditoría y actualización de archivos CLAUDE.md.
+- 🧪 **[PR Review Toolkit](skills/pr-review-toolkit.md)**: seis agentes que revisan comentarios, tests, errores, tipos y simplificación de un PR.
 
 → Índice: [`skills/README.md`](skills/README.md) · Plantilla: [`skills/skill-template.md`](skills/skill-template.md)
+
+## 🖥️ Apps
+
+Aplicaciones que coordinan agentes CLI desde una interfaz:
+
+- 🪐 **[Orca](apps/orca.md)**: ejecuta varios agentes (Claude Code, Codex, entre otros) en paralelo, cada uno en su worktree, desde escritorio y móvil.
+
+→ Índice: [`apps/README.md`](apps/README.md)
 
 ## ⚙️ Setup de Agentes
 

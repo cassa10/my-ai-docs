@@ -21,6 +21,13 @@ Los plugins que traen varios skills se documentan en un solo archivo, con una ta
 | i-have-adhd | GitHub: ayghri/i-have-adhd | 0.4.1 | 1 (`/i-have-adhd`) | [i-have-adhd.md](./i-have-adhd.md) |
 | Modern Web Guidance | GitHub: GoogleChrome/modern-web-guidance | 1.0.1 | 1 (`modern-web-guidance`) + CLI | [modern-web-guidance.md](./modern-web-guidance.md) |
 | Frontend Design | GitHub: anthropics/claude-plugins-official | 1.1.1 | 1 (`frontend-design`) | [frontend-design.md](./frontend-design.md) |
+| TypeScript LSP | GitHub: anthropics/claude-plugins-official | 1.0.0 | 0 (servidor LSP) | [typescript-lsp.md](./typescript-lsp.md) |
+| Security Guidance | GitHub: anthropics/claude-plugins-official | 2.0.21 | 0 (hooks) | [security-guidance.md](./security-guidance.md) |
+| Code Review | GitHub: anthropics/claude-plugins-official | 1.0.1 | 1 (`/code-review`) | [code-review.md](./code-review.md) |
+| Commit Commands | GitHub: anthropics/claude-plugins-official | 1.0.1 | 3 (comandos) | [commit-commands.md](./commit-commands.md) |
+| Code Simplifier | GitHub: anthropics/claude-plugins-official | 1.0.0 | 1 (agente) | [code-simplifier.md](./code-simplifier.md) |
+| CLAUDE.md Management | GitHub: anthropics/claude-plugins-official | 1.0.0 | 1 (skill) + 1 (comando) | [claude-md-management.md](./claude-md-management.md) |
+| PR Review Toolkit | GitHub: anthropics/claude-plugins-official | 1.0.1 | 6 (agentes) + 1 (comando) | [pr-review-toolkit.md](./pr-review-toolkit.md) |
 
 Skills integrados en la app (docx, pdf, pptx, xlsx, skill-creator y otros) no están en esta carpeta porque no los instalás vos.
 
