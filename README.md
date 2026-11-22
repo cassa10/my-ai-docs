@@ -30,10 +30,19 @@ my-ai-docs/
 ├── agents/      # 🤖 Configuraciones de agentes AI
 ├── apps/        # 🖥️ Aplicaciones que orquestan agentes
 ├── mcps/        # 🔌 Configuraciones de Model Context Protocol
+├── scripts/     # 🛠️ Build de la web de docs
+├── site/        # 🌐 UI web de las docs (HTML, CSS y JS)
 ├── skills/      # 🧩 Documentación de skills
 ├── setup/       # ⚙️ Replicación de Claude Code y Codex
 └── templates/   # 🧱 Templates reutilizables
 ```
+
+## 🌐 Ver como web
+
+Las docs tienen una web con menú, buscador y Markdown renderizado (`site/`). GitHub Pages la publica sola en cada push a `main` (`.github/workflows/pages.yml`).
+
+- **Activar Pages:** Settings → Pages → Source: **GitHub Actions**. Con repo privado, Pages requiere un plan de pago.
+- **Ver en local:** `node scripts/build-site.mjs --serve` y abrí http://localhost:4173 (solo Node 20+, sin instalar nada).
 
 ## 🤖 Agents
 

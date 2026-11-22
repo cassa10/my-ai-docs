@@ -53,6 +53,7 @@ env/
 dist/
 build/
 out/
+_site/
 *.out
 
 # Archivos de testing

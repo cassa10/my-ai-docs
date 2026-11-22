@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My AI Docs</title>
+  <meta name="description" content="Mis agentes, skills, MCPs, templates y setup para Claude Code y Codex.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <header class="topbar">
+    <button class="icon-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">☰</button>
+    <a class="brand" href="#/">🧠 My AI Docs</a>
+    <label class="search">
+      <span class="sr-only">Buscar documentos</span>
+      <input id="search" type="search" placeholder="Buscar… (tecla /)" autocomplete="off">
+    </label>
+    <a class="gh-link" href="https://github.com/cassa10/my-ai-docs" target="_blank" rel="noopener">GitHub ↗</a>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="sidebar" aria-label="Documentos"></nav>
+    <main id="content" class="content" tabindex="-1">
+      <p class="muted">Cargando…</p>
+    </main>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@18.2.1/lib/marked.umd.js"></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
